@@ -1527,8 +1527,6 @@
       
         
       
-        
-      
     
     
       
@@ -1572,27 +1570,6 @@
   
   <span class="md-ellipsis">
     Change log
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../upgrade-notes/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Upgrade notes
   </span>
   
 
@@ -2559,6 +2536,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#successful-result" class="md-nav__link">
+    <span class="md-ellipsis">
+      Successful result
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2599,9 +2600,72 @@ The format is designed to be easily consumed by other tools and services.</p>
 <h2 id="runs">Runs<a class="headerlink" href="#runs" title="Permanent link">#</a></h2>
 <p>When running PSRule executed a run will be generated in <code>runs</code> containing details about PSRule and configuration details.</p>
 <h2 id="invocation">Invocation<a class="headerlink" href="#invocation" title="Permanent link">#</a></h2>
-<p>The <code>invocation</code> property reports runtime information about how the run started.</p>
+<p>The <code>invocations</code> property reports runtime information about how the run started.</p>
 <h3 id="ruleconfigurationoverrides">RuleConfigurationOverrides<a class="headerlink" href="#ruleconfigurationoverrides" title="Permanent link">#</a></h3>
 <p>When a rule has been overridden in configuration this invocation property will contain any level overrides.</p>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">#</a></h2>
+<h3 id="successful-result">Successful result<a class="headerlink" href="#successful-result" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2.1.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;runs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;tool&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;driver&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;guid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0130215d-58eb-4887-b6fa-31ed02500569&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PSRule&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;organization&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Microsoft Corporation&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;semanticVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2.9.0&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;informationUri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://aka.ms/ps-rule&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;extensions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">          </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;guid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;7bfb5234-1648-4e52-956c-42f303d416cb&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PSRule.Rules.MSFT.OSS&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;organization&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Microsoft Corporation&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.1.0&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;informationUri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/microsoft/PSRule.Rules.MSFT.OSS&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;associatedComponent&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">              </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PSRule&quot;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;automationDetails&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CI repository scan/workspace/1&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;An analysis scan that checks repository files.&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;correlationGuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;00000000-0000-0000-0000-000000000000&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;invocations&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;executionSuccessful&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;versionControlProvenance&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;repositoryUri&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/microsoft/PSRule&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;revisionId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2a3671213e5768aad6af7f132e418d1a4368a3c5&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;branch&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;main&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;mappedTo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;uriBaseId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;REPO_ROOT&quot;</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;originalUriBaseIds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;REPO_ROOT&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The directory into which the repo was cloned.&quot;</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;results&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">      </span><span class="nt">&quot;columnKind&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;utf16CodeUnits&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
 
 
 
@@ -2624,7 +2688,7 @@ The format is designed to be easily consumed by other tools and services.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 21, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 5, 2025</span>
   </span>
 
     
