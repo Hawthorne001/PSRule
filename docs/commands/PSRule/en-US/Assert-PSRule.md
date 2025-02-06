@@ -16,22 +16,23 @@ Evaluate objects against matching rules and assert any failures.
 ### Input (Default)
 
 ```text
-Assert-PSRule [-Module <String[]>] [-Format <InputFormat>] [-Baseline <BaselineOption>]
- [-Convention <String[]>] [-Style <OutputStyle>] [-Outcome <RuleOutcome>] [-As <ResultFormat>]
- [[-Path] <String[]>] [-Name <String[]>] [-Tag <Hashtable>] [-OutputPath <String>]
+Assert-PSRule [-Module <String[]>] [-Formats <String[]>] [-InputStringFormat <String>]
+ [-Baseline <BaselineOption>] [-Convention <String[]>] [-Style <OutputStyle>] [-Outcome <RuleOutcome>]
+ [-As <ResultFormat>] [[-Path] <String[]>] [-Name <String[]>] [-Tag <Hashtable>] [-OutputPath <String>]
  [-OutputFormat <OutputFormat>] [-Option <PSRuleOption>] [-ObjectPath <String>] [-TargetType <String[]>]
- [-Culture <String[]>] -InputObject <PSObject> [-ResultVariable <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Culture <String[]>] -InputObject <PSObject> [-ResultVariable <String>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### InputPath
 
 ```text
-Assert-PSRule -InputPath <String[]> [-Module <String[]>] [-Format <InputFormat>] [-Baseline <BaselineOption>]
- [-Convention <String[]>] [-Style <OutputStyle>] [-Outcome <RuleOutcome>] [-As <ResultFormat>]
- [[-Path] <String[]>] [-Name <String[]>] [-Tag <Hashtable>] [-OutputPath <String>]
+Assert-PSRule -InputPath <String[]> [-Module <String[]>] [-Formats <String[]>] [-InputStringFormat <String>]
+ [-Baseline <BaselineOption>] [-Convention <String[]>] [-Style <OutputStyle>] [-Outcome <RuleOutcome>]
+ [-As <ResultFormat>] [[-Path] <String[]>] [-Name <String[]>] [-Tag <Hashtable>] [-OutputPath <String>]
  [-OutputFormat <OutputFormat>] [-Option <PSRuleOption>] [-ObjectPath <String>] [-TargetType <String[]>]
- [-Culture <String[]>] [-ResultVariable <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Culture <String[]>] [-ResultVariable <String>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -120,35 +121,43 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Format
+### -Formats
 
-Configures the input format for when a string is passed in as a target object.
+Enables one or more formats by name to process files and deserialized objects.
+Parameter is equivalent to setting `Format.<name>.Enabled` = `true` for each of the specified formats.
 
-When the `-InputObject` parameter or pipeline input is used, strings are treated as plain text by default.
-Set this option to either `Yaml`, `Json`, `Markdown`, `PowerShellData` to have PSRule deserialize the object.
-
-When the `-InputPath` parameter is used with a file path or URL.
-If the `Detect` format is used, the file extension will be used to automatically detect the format.
-When `-InputPath` is not used, `Detect` is the same as `None`.
-
-When this option is set to `File` PSRule scans the path and subdirectories specified by `-InputPath`.
-Files are treated as objects instead of being deserialized.
-Additional, PSRule uses the file extension as the object type.
-When files have no extension the whole file name is used.
-
-See `about_PSRule_Options` for details.
-
-This parameter takes precedence over the `Input.Format` option if set.
+This parameter takes precedence over the `Format.<name>.Enabled` option if set.
 
 ```yaml
-Type: InputFormat
+Type: String[]
 Parameter Sets: (All)
 Aliases:
-Accepted values: None, Yaml, Json, Markdown, PowerShellData, File, Detect
 
 Required: False
 Position: Named
-Default value: Detect
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputStringFormat
+
+Configures the input format for when a string is passed in as a target object.
+This parameter also enables the format if it is not already enabled.
+
+When the `-InputObject` parameter or pipeline input is used, strings are treated as plain text by default.
+Set this option to an available format for example: `yaml`, `json`, `markdown`, `powershell_data`.
+
+This parameter takes precedence over the `Input.StringFormat` option if set.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

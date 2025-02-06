@@ -44,6 +44,7 @@ nav:
       - Overview:
           - About: about.md
           - Features: features.md
+      - What's new in v3: updates/v3.0.md
       - Setup:
           - Index: setup/index.md
           - Visual Studio Code: setup/vscode.md
@@ -66,7 +67,7 @@ nav:
       - Concepts:
           - Baselines: concepts/baselines.md
           - Capabilities: concepts/capabilities.md
-          - Emitters: concepts/emitters.md
+          - Formats: concepts/formats.md
           - Functions: expressions/functions.md
           - Grouping rules: concepts/grouping-rules.md
           - Sub-selectors: expressions/sub-selectors.md
@@ -78,8 +79,8 @@ nav:
       - Related projects: related-projects.md
       - Support: support.md
   - Updates:
-      # - January 2025: updates/v3.0.md
-      - Change log: 'CHANGELOG-v3.md'
+      - What's new in v3: updates/v3.0.md
+      - Change log: CHANGELOG-v3.md
       - Deprecations: deprecations.md
       - Changes and versioning: versioning.md
   - Reference:
@@ -160,6 +161,7 @@ plugins:
         'install.md': 'setup/index.md'
         'changelog.md': 'CHANGELOG-v3.md'
         'upgrade-notes.md': 'deprecations.md'
+        'concepts/emitters.md': 'concepts/formats.md'
 
 hooks:
   - docs/hooks/maml_formatting.py
