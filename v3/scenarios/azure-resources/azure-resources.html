@@ -12,24 +12,28 @@
         <meta name="author" content="Microsoft">
       
       
-        <link rel="canonical" href="https://microsoft.github.io/PSRule/v3/scenarios/index.html">
+        <link rel="canonical" href="https://microsoft.github.io/PSRule/v3/scenarios/azure-resources/azure-resources.html">
       
       
+        <link rel="prev" href="../../authoring/writing-rule-help.html">
       
       
-      <link rel="icon" href="../assets/ms_icon.png">
+        <link rel="next" href="../azure-tags/azure-tags.html">
+      
+      
+      <link rel="icon" href="../../assets/ms_icon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>Getting started with PSRule - PSRule</title>
+        <title>Validate Azure resource configuration - PSRule</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,9 +78,9 @@
   <!-- Open graph meta tags -->
   <meta property="og:site_name" content="PSRule" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="PSRule - Getting started with PSRule" />
+  <meta property="og:title" content="PSRule - Validate Azure resource configuration" />
   <meta property="og:description" content="Validate infrastructure as code (IaC) and objects using PowerShell rules." />
-  <meta property="og:url" content="https://microsoft.github.io/PSRule/v3/scenarios/index.html" />
+  <meta property="og:url" content="https://microsoft.github.io/PSRule/v3/scenarios/azure-resources/azure-resources.html" />
   <meta property="og:image" content="https://repository-images.githubusercontent.com/125832556/d6685d9f-ba70-44a1-b11f-6534831143d1" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1280" />
@@ -86,7 +90,7 @@
   <!-- Twitter meta tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@github" />
-  <meta name="twitter:title" content="PSRule - Getting started with PSRule" />
+  <meta name="twitter:title" content="PSRule - Validate Azure resource configuration" />
   <meta name="twitter:description" content="Validate infrastructure as code (IaC) and objects using PowerShell rules." />
   <meta name="twitter:image" content="https://repository-images.githubusercontent.com/125832556/d6685d9f-ba70-44a1-b11f-6534831143d1" />
 
@@ -108,7 +112,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started-with-psrule" class="md-skip">
+        <a href="#validate-azure-resource-configuration" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +124,7 @@
             
             
   You are viewing the next version PSRule.
-  <a href="../.."> 
+  <a href="../../.."> 
     <strong>Click here to go to latest stable version.</strong>
   </a>
 
@@ -139,9 +143,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="PSRule" class="md-header__button md-logo" aria-label="PSRule" data-md-component="logo">
+    <a href="../../index.html" title="PSRule" class="md-header__button md-logo" aria-label="PSRule" data-md-component="logo">
       
-  <img src="../assets/ms_icon.png" alt="logo">
+  <img src="../../assets/ms_icon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -158,7 +162,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting started with PSRule
+              Validate Azure resource configuration
             
           </span>
         </div>
@@ -243,7 +247,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../index.html" class="md-tabs__link">
+      <a href="../../index.html" class="md-tabs__link">
         
   
   
@@ -260,6 +264,8 @@
   
   
   
+    
+  
   
     
     
@@ -267,11 +273,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../about.html" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../about.html" class="md-tabs__link">
           
   
   
@@ -296,7 +304,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../updates/v3.0.html" class="md-tabs__link">
+        <a href="../../updates/v3.0.html" class="md-tabs__link">
           
   
   
@@ -325,7 +333,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../commands/PSRule/en-US/Assert-PSRule.html" class="md-tabs__link">
+        <a href="../../commands/PSRule/en-US/Assert-PSRule.html" class="md-tabs__link">
           
   
   
@@ -348,7 +356,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../faq.html" class="md-tabs__link">
+      <a href="../../faq.html" class="md-tabs__link">
         
   
   
@@ -369,7 +377,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../addon-modules.html" class="md-tabs__link">
+        <a href="../../addon-modules.html" class="md-tabs__link">
           
   
   
@@ -405,9 +413,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="PSRule" class="md-nav__button md-logo" aria-label="PSRule" data-md-component="logo">
+    <a href="../../index.html" title="PSRule" class="md-nav__button md-logo" aria-label="PSRule" data-md-component="logo">
       
-  <img src="../assets/ms_icon.png" alt="logo">
+  <img src="../../assets/ms_icon.png" alt="logo">
 
     </a>
     PSRule
@@ -434,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="../../index.html" class="md-nav__link">
         
   
   
@@ -453,8 +461,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -486,17 +496,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -509,7 +522,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Getting started
@@ -570,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../about.html" class="md-nav__link">
+      <a href="../../about.html" class="md-nav__link">
         
   
   
@@ -593,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../features.html" class="md-nav__link">
+      <a href="../../features.html" class="md-nav__link">
         
   
   
@@ -624,7 +637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../updates/v3.0.html" class="md-nav__link">
+      <a href="../../updates/v3.0.html" class="md-nav__link">
         
   
   
@@ -670,7 +683,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../setup/index.html" class="md-nav__link ">
+            <a href="../../setup/index.html" class="md-nav__link ">
               
   
   
@@ -705,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup/vscode.html" class="md-nav__link">
+      <a href="../../setup/vscode.html" class="md-nav__link">
         
   
   
@@ -785,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../creating-your-pipeline.html" class="md-nav__link">
+      <a href="../../creating-your-pipeline.html" class="md-nav__link">
         
   
   
@@ -808,7 +821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../validating-locally.html" class="md-nav__link">
+      <a href="../../validating-locally.html" class="md-nav__link">
         
   
   
@@ -831,7 +844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../analysis-output.html" class="md-nav__link">
+      <a href="../../analysis-output.html" class="md-nav__link">
         
   
   
@@ -917,7 +930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quickstart/standalone-rule.html" class="md-nav__link">
+      <a href="../../quickstart/standalone-rule.html" class="md-nav__link">
         
   
   
@@ -940,7 +953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../authoring/testing-infrastructure.html" class="md-nav__link">
+      <a href="../../authoring/testing-infrastructure.html" class="md-nav__link">
         
   
   
@@ -963,7 +976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../authoring/using-expressions.html" class="md-nav__link">
+      <a href="../../authoring/using-expressions.html" class="md-nav__link">
         
   
   
@@ -986,7 +999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../authoring/storing-rules.html" class="md-nav__link">
+      <a href="../../authoring/storing-rules.html" class="md-nav__link">
         
   
   
@@ -1009,7 +1022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../authoring/packaging-rules.html" class="md-nav__link">
+      <a href="../../authoring/packaging-rules.html" class="md-nav__link">
         
   
   
@@ -1032,7 +1045,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../authoring/writing-rule-help.html" class="md-nav__link">
+      <a href="../../authoring/writing-rule-help.html" class="md-nav__link">
         
   
   
@@ -1060,8 +1073,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1080,11 +1095,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
         
           
           <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
@@ -1100,7 +1115,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
             Tutorials
@@ -1111,10 +1126,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="azure-resources/azure-resources.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Validate Azure resource configuration
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="azure-resources.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1125,6 +1162,95 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#define-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Define rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Define rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-rule-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set rule condition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-rule-recommendation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add rule recommendation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-with-preconditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filter with preconditions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#execute-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execute rules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#define-helper-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Define helper functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      More information
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1137,7 +1263,7 @@
   
   
     <li class="md-nav__item">
-      <a href="azure-tags/azure-tags.html" class="md-nav__link">
+      <a href="../azure-tags/azure-tags.html" class="md-nav__link">
         
   
   
@@ -1160,7 +1286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="kubernetes-resources/kubernetes-resources.html" class="md-nav__link">
+      <a href="../kubernetes-resources/kubernetes-resources.html" class="md-nav__link">
         
   
   
@@ -1183,7 +1309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="containers/container-execution.html" class="md-nav__link">
+      <a href="../containers/container-execution.html" class="md-nav__link">
         
   
   
@@ -1271,7 +1397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/baselines.html" class="md-nav__link">
+      <a href="../../concepts/baselines.html" class="md-nav__link">
         
   
   
@@ -1294,7 +1420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/capabilities.html" class="md-nav__link">
+      <a href="../../concepts/capabilities.html" class="md-nav__link">
         
   
   
@@ -1317,7 +1443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/formats.html" class="md-nav__link">
+      <a href="../../concepts/formats.html" class="md-nav__link">
         
   
   
@@ -1340,7 +1466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../expressions/functions.html" class="md-nav__link">
+      <a href="../../expressions/functions.html" class="md-nav__link">
         
   
   
@@ -1363,7 +1489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/grouping-rules.html" class="md-nav__link">
+      <a href="../../concepts/grouping-rules.html" class="md-nav__link">
         
   
   
@@ -1386,7 +1512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../expressions/sub-selectors.html" class="md-nav__link">
+      <a href="../../expressions/sub-selectors.html" class="md-nav__link">
         
   
   
@@ -1409,7 +1535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/lockfile.html" class="md-nav__link">
+      <a href="../../concepts/lockfile.html" class="md-nav__link">
         
   
   
@@ -1485,7 +1611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="validation-pipeline/validation-pipeline.html" class="md-nav__link">
+      <a href="../validation-pipeline/validation-pipeline.html" class="md-nav__link">
         
   
   
@@ -1516,7 +1642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting.html" class="md-nav__link">
+      <a href="../../troubleshooting.html" class="md-nav__link">
         
   
   
@@ -1539,7 +1665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../license-contributing.html" class="md-nav__link">
+      <a href="../../license-contributing.html" class="md-nav__link">
         
   
   
@@ -1562,7 +1688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../related-projects.html" class="md-nav__link">
+      <a href="../../related-projects.html" class="md-nav__link">
         
   
   
@@ -1585,7 +1711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../support.html" class="md-nav__link">
+      <a href="../../support.html" class="md-nav__link">
         
   
   
@@ -1666,7 +1792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../updates/v3.0.html" class="md-nav__link">
+      <a href="../../updates/v3.0.html" class="md-nav__link">
         
   
   
@@ -1689,7 +1815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../changelog.html" class="md-nav__link">
+      <a href="../../changelog.html" class="md-nav__link">
         
   
   
@@ -1712,7 +1838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../deprecations.html" class="md-nav__link">
+      <a href="../../deprecations.html" class="md-nav__link">
         
   
   
@@ -1735,7 +1861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../versioning.html" class="md-nav__link">
+      <a href="../../versioning.html" class="md-nav__link">
         
   
   
@@ -1901,7 +2027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../commands/PSRule/en-US/Assert-PSRule.html" class="md-nav__link">
+      <a href="../../commands/PSRule/en-US/Assert-PSRule.html" class="md-nav__link">
         
   
   
@@ -1924,7 +2050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../commands/PSRule/en-US/Export-PSRuleBaseline.html" class="md-nav__link">
+      <a href="../../commands/PSRule/en-US/Export-PSRuleBaseline.html" class="md-nav__link">
         
   
   
@@ -1947,7 +2073,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../commands/PSRule/en-US/Get-PSRule.html" class="md-nav__link">
+      <a href="../../commands/PSRule/en-US/Get-PSRule.html" class="md-nav__link">
         
   
   
@@ -1970,7 +2096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../commands/PSRule/en-US/Get-PSRuleBaseline.html" class="md-nav__link">
+      <a href="../../commands/PSRule/en-US/Get-PSRuleBaseline.html" class="md-nav__link">
         
   
   
@@ -1993,7 +2119,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../commands/PSRule/en-US/Get-PSRuleHelp.html" class="md-nav__link">
+      <a href="../../commands/PSRule/en-US/Get-PSRuleHelp.html" class="md-nav__link">
         
   
   
@@ -2016,7 +2142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../commands/PSRule/en-US/Get-PSRuleTarget.html" class="md-nav__link">
+      <a href="../../commands/PSRule/en-US/Get-PSRuleTarget.html" class="md-nav__link">
         
   
   
@@ -2039,7 +2165,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../commands/PSRule/en-US/Invoke-PSRule.html" class="md-nav__link">
+      <a href="../../commands/PSRule/en-US/Invoke-PSRule.html" class="md-nav__link">
         
   
   
@@ -2062,7 +2188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../commands/PSRule/en-US/New-PSRuleOption.html" class="md-nav__link">
+      <a href="../../commands/PSRule/en-US/New-PSRuleOption.html" class="md-nav__link">
         
   
   
@@ -2085,7 +2211,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../commands/PSRule/en-US/Set-PSRuleOption.html" class="md-nav__link">
+      <a href="../../commands/PSRule/en-US/Set-PSRuleOption.html" class="md-nav__link">
         
   
   
@@ -2108,7 +2234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../commands/PSRule/en-US/Test-PSRuleTarget.html" class="md-nav__link">
+      <a href="../../commands/PSRule/en-US/Test-PSRuleTarget.html" class="md-nav__link">
         
   
   
@@ -2166,7 +2292,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../concepts/cli/index.html" class="md-nav__link ">
+            <a href="../../concepts/cli/index.html" class="md-nav__link ">
               
   
   
@@ -2201,7 +2327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/cli/run.html" class="md-nav__link">
+      <a href="../../concepts/cli/run.html" class="md-nav__link">
         
   
   
@@ -2224,7 +2350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/cli/module.html" class="md-nav__link">
+      <a href="../../concepts/cli/module.html" class="md-nav__link">
         
   
   
@@ -2247,7 +2373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/cli/restore.html" class="md-nav__link">
+      <a href="../../concepts/cli/restore.html" class="md-nav__link">
         
   
   
@@ -2278,7 +2404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Assert.html" class="md-nav__link">
+      <a href="../../concepts/PSRule/en-US/about_PSRule_Assert.html" class="md-nav__link">
         
   
   
@@ -2301,7 +2427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Baseline.html" class="md-nav__link">
+      <a href="../../concepts/PSRule/en-US/about_PSRule_Baseline.html" class="md-nav__link">
         
   
   
@@ -2324,7 +2450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Badges.html" class="md-nav__link">
+      <a href="../../concepts/PSRule/en-US/about_PSRule_Badges.html" class="md-nav__link">
         
   
   
@@ -2347,7 +2473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Conventions.html" class="md-nav__link">
+      <a href="../../concepts/PSRule/en-US/about_PSRule_Conventions.html" class="md-nav__link">
         
   
   
@@ -2370,7 +2496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Docs.html" class="md-nav__link">
+      <a href="../../concepts/PSRule/en-US/about_PSRule_Docs.html" class="md-nav__link">
         
   
   
@@ -2393,7 +2519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Expressions.html" class="md-nav__link">
+      <a href="../../concepts/PSRule/en-US/about_PSRule_Expressions.html" class="md-nav__link">
         
   
   
@@ -2416,7 +2542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../keywords/PSRule/en-US/about_PSRule_Keywords.html" class="md-nav__link">
+      <a href="../../keywords/PSRule/en-US/about_PSRule_Keywords.html" class="md-nav__link">
         
   
   
@@ -2439,7 +2565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Options.html" class="md-nav__link">
+      <a href="../../concepts/PSRule/en-US/about_PSRule_Options.html" class="md-nav__link">
         
   
   
@@ -2462,7 +2588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Rules.html" class="md-nav__link">
+      <a href="../../concepts/PSRule/en-US/about_PSRule_Rules.html" class="md-nav__link">
         
   
   
@@ -2485,7 +2611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/security.html" class="md-nav__link">
+      <a href="../../concepts/security.html" class="md-nav__link">
         
   
   
@@ -2508,7 +2634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Selectors.html" class="md-nav__link">
+      <a href="../../concepts/PSRule/en-US/about_PSRule_Selectors.html" class="md-nav__link">
         
   
   
@@ -2531,7 +2657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_SuppressionGroups.html" class="md-nav__link">
+      <a href="../../concepts/PSRule/en-US/about_PSRule_SuppressionGroups.html" class="md-nav__link">
         
   
   
@@ -2554,7 +2680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Variables.html" class="md-nav__link">
+      <a href="../../concepts/PSRule/en-US/about_PSRule_Variables.html" class="md-nav__link">
         
   
   
@@ -2584,7 +2710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../faq.html" class="md-nav__link">
+      <a href="../../faq.html" class="md-nav__link">
         
   
   
@@ -2651,7 +2777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../addon-modules.html" class="md-nav__link">
+      <a href="../../addon-modules.html" class="md-nav__link">
         
   
   
@@ -2701,36 +2827,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#define-a-rule" class="md-nav__link">
+  <a href="#define-rules" class="md-nav__link">
     <span class="md-ellipsis">
-      Define a rule
+      Define rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Define rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-rule-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set rule condition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-rule-recommendation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add rule recommendation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-with-preconditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filter with preconditions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#execute-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execute rules
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#execute-a-rule" class="md-nav__link">
+  <a href="#define-helper-functions" class="md-nav__link">
     <span class="md-ellipsis">
-      Execute a rule
+      Define helper functions
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#additional-options" class="md-nav__link">
+  <a href="#more-information" class="md-nav__link">
     <span class="md-ellipsis">
-      Additional options
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scenarios" class="md-nav__link">
-    <span class="md-ellipsis">
-      Scenarios
+      More information
     </span>
   </a>
   
@@ -2753,7 +2912,7 @@
 
 
   
-    <a href="https://github.com/microsoft/PSRule/blob/main/docs/scenarios/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/microsoft/PSRule/blob/main/docs/scenarios/azure-resources/azure-resources.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -2762,121 +2921,194 @@
     
       
     
-    <a href="https://github.com/microsoft/PSRule/raw/main/docs/scenarios/index.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/microsoft/PSRule/raw/main/docs/scenarios/azure-resources/azure-resources.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-<h1 id="getting-started-with-psrule">Getting started with PSRule<a class="headerlink" href="#getting-started-with-psrule" title="Permanent link">#</a></h1>
-<h3 id="define-a-rule">Define a rule<a class="headerlink" href="#define-a-rule" title="Permanent link">#</a></h3>
-<p>To define a rule, use a <code>Rule</code> block saved to a file with the <code>.Rule.ps1</code> extension.</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">Rule</span> <span class="s1">&#39;NameOfRule&#39;</span> <span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="c"># Rule conditions</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>Within the body of the rule provide one or more conditions.
-A condition is valid PowerShell that results in <code>$True</code> or <code>$False</code>.</p>
-<p>For example:</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">Rule</span> <span class="s1">&#39;isFruit&#39;</span> <span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="c"># Condition to determine if the object is fruit</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="nv">$TargetObject</span><span class="p">.</span><span class="n">Name</span> <span class="n">-in</span> <span class="s1">&#39;Apple&#39;</span><span class="p">,</span> <span class="s1">&#39;Orange&#39;</span><span class="p">,</span> <span class="s1">&#39;Pear&#39;</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>An optional result message can be added to by using the <code>Recommend</code> keyword.</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">Rule</span> <span class="s1">&#39;isFruit&#39;</span> <span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="c"># An recommendation to display in output</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="n">Recommend</span> <span class="s1">&#39;Fruit is only Apple, Orange and Pear&#39;</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="c"># Condition to determine if the object is fruit</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="nv">$TargetObject</span><span class="p">.</span><span class="n">Name</span> <span class="n">-in</span> <span class="s1">&#39;Apple&#39;</span><span class="p">,</span> <span class="s1">&#39;Orange&#39;</span><span class="p">,</span> <span class="s1">&#39;Pear&#39;</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>The rule is saved to a file named <a href="fruit/isFruit.Rule.ps1"><code>isFruit.Rule.ps1</code></a> file.
-One or more rules can be defined within a single file.</p>
-<h3 id="execute-a-rule">Execute a rule<a class="headerlink" href="#execute-a-rule" title="Permanent link">#</a></h3>
-<p>To execute the rule use <code>Invoke-PSRule</code>.</p>
-<p>For example:</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c"># Define objects to validate</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nv">$items</span> <span class="p">=</span> <span class="p">@();</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nv">$items</span> <span class="p">+=</span> <span class="no">[PSCustomObject]</span><span class="p">@{</span> <span class="n">Name</span> <span class="p">=</span> <span class="s1">&#39;Fridge&#39;</span> <span class="p">};</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nv">$items</span> <span class="p">+=</span> <span class="no">[PSCustomObject]</span><span class="p">@{</span> <span class="n">Name</span> <span class="p">=</span> <span class="s1">&#39;Apple&#39;</span> <span class="p">};</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="c"># Validate each item using rules saved in current working path</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nv">$items</span> <span class="p">|</span> <span class="nb">Invoke-PSRule</span><span class="p">;</span>
-</span></code></pre></div>
-<p>The output of this example is:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>   TargetName: Fridge
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>RuleName                            Outcome    Recommendation
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>--------                            -------    --------------
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>isFruit                             Fail       Fruit is only Apple, Orange and Pear
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>   TargetName: Apple
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>RuleName                            Outcome    Recommendation
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>--------                            -------    --------------
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>isFruit                             Pass       Fruit is only Apple, Orange and Pear
-</span></code></pre></div>
-<h3 id="additional-options">Additional options<a class="headerlink" href="#additional-options" title="Permanent link">#</a></h3>
-<p>To filter results to only non-fruit results, use <code>Invoke-PSRule -Outcome Fail</code>.
-Passed, failed and error results are shown by default.</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c"># Only show non-fruit results</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nv">$items</span> <span class="p">|</span> <span class="nb">Invoke-PSRule</span> <span class="n">-Outcome</span> <span class="n">Fail</span><span class="p">;</span>
-</span></code></pre></div>
-<p>For a summary of results for each rule use <code>Invoke-PSRule -As Summary</code>.</p>
-<p>For example:</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c"># Show rule summary</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nv">$items</span> <span class="p">|</span> <span class="nb">Invoke-PSRule</span> <span class="o">-As</span> <span class="n">Summary</span><span class="p">;</span>
-</span></code></pre></div>
-<p>The output of this example is:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>RuleName                            Pass  Fail  Outcome
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>--------                            ----  ----  -------
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>isFruit                             1     1     Fail
-</span></code></pre></div>
-<p>An optional failure reason can be added to the rule block by using the <code>Reason</code> keyword.</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">Rule</span> <span class="s1">&#39;isFruit&#39;</span> <span class="p">{</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="c"># An recommendation to display in output</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="n">Recommend</span> <span class="s1">&#39;Fruit is only Apple, Orange and Pear&#39;</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="c"># An failure reason to display for non-fruit</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    <span class="n">Reason</span> <span class="s2">&quot;</span><span class="p">$(</span><span class="nv">$PSRule</span><span class="p">.</span><span class="n">TargetName</span><span class="p">)</span><span class="s2"> is not fruit.&quot;</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>    <span class="c"># Condition to determine if the object is fruit</span>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>    <span class="nv">$TargetObject</span><span class="p">.</span><span class="n">Name</span> <span class="n">-in</span> <span class="s1">&#39;Apple&#39;</span><span class="p">,</span> <span class="s1">&#39;Orange&#39;</span><span class="p">,</span> <span class="s1">&#39;Pear&#39;</span>
-</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>To include the reason with output use <code>Invoke-PSRule -OutputFormat Wide</code>.</p>
-<p>For example:</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c"># Show failure reason for failing results</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nv">$items</span> <span class="p">|</span> <span class="nb">Invoke-PSRule</span> <span class="n">-OutputFormat</span> <span class="n">Wide</span><span class="p">;</span>
-</span></code></pre></div>
-<p>The output of this example is:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>   TargetName: Fridge
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>RuleName                            Outcome    Reason                              Recommendation
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>--------                            -------    ------                              --------------
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>isFruit                             Fail       Fridge is not fruit.                Fruit is only Apple, Orange and Pear
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>
-</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>   TargetName: Apple
-</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
-</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>RuleName                            Outcome    Reason                              Recommendation
-</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>--------                            -------    ------                              --------------
-</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>isFruit                             Pass                                           Fruit is only Apple, Orange and Pear
-</span></code></pre></div>
-<p>The final rule is saved to <a href="fruit/isFruit.Rule.ps1"><code>isFruit.Rule.ps1</code></a>.</p>
-<h3 id="scenarios">Scenarios<a class="headerlink" href="#scenarios" title="Permanent link">#</a></h3>
-<p>For walk through examples of PSRule usage see:</p>
+<h1 id="validate-azure-resource-configuration">Validate Azure resource configuration<a class="headerlink" href="#validate-azure-resource-configuration" title="Permanent link">#</a></h1>
+<p>PSRule makes it easy to validate Infrastructure as Code (<abbr title="Infrastructure as Code">IaC</abbr>) such as Azure resources.
+For example, Azure resources can be validated to match an internal standard or baseline.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A pre-built module to validate Azure resources already exists.
+This scenario demonstrates the process and features of PSRule for illustration purposes.</p>
+<p>Consider using or contributing these pre-built rule modules instead:</p>
 <ul>
-<li><a href="azure-resources/azure-resources.html">Validate Azure resource configuration</a></li>
-<li><a href="azure-tags/azure-tags.html">Validate Azure resources tags</a></li>
-<li><a href="kubernetes-resources/kubernetes-resources.html">Validate Kubernetes resources</a></li>
-<li><a href="validation-pipeline/validation-pipeline.html">Using within continuous integration</a></li>
-<li><a href="../authoring/packaging-rules.html">Packaging rules in a module</a></li>
-<li><a href="../authoring/writing-rule-help.html">Writing rule help</a></li>
+<li><a href="https://github.com/Azure/PSRule.Rules.Azure">PSRule.Rules.Azure</a></li>
+<li><a href="https://github.com/microsoft/PSRule.Rules.CAF">PSRule.Rules.CAF</a></li>
+</ul>
+</div>
+<p>This scenario covers the following:</p>
+<ul>
+<li>Defining a basic rule.</li>
+<li>Adding a recommendation.</li>
+<li>Using script pre-conditions.</li>
+<li>Using helper functions.</li>
+</ul>
+<p>In this scenario we will use a JSON file:</p>
+<ul>
+<li><a href="resources.json"><code>resources.json</code></a> - An export for the Azure resource properties saved for offline use.</li>
+</ul>
+<p>To generate a similar <code>resources.json</code> file of your own, the use following command.</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c"># Get all resources using the Az modules. Alternatively use Get-AzureRmResource if using AzureRm modules.</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c"># This command also requires authentication with Connect-AzAccount or Connect-AzureRmAccount</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">Get-AzResource</span> <span class="n">-ExpandProperties</span> <span class="p">|</span> <span class="nb">ConvertTo-Json</span> <span class="n">-Depth</span> <span class="n">10</span> <span class="p">|</span> <span class="nb">Set-Content</span> <span class="n">-path</span> <span class="p">.\</span><span class="n">resources</span><span class="p">.</span><span class="n">json</span><span class="p">;</span>
+</span></code></pre></div>
+<p>For this example we ran this command:</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-AzResource</span> <span class="n">-ExpandProperties</span> <span class="p">|</span> <span class="nb">ConvertTo-Json</span> <span class="n">-Depth</span> <span class="n">10</span> <span class="p">|</span> <span class="nb">Set-Content</span> <span class="n">-path</span> <span class="n">docs</span><span class="p">/</span><span class="n">scenarios</span><span class="p">/</span><span class="n">azure-resources</span><span class="p">/</span><span class="n">resources</span><span class="p">.</span><span class="n">json</span><span class="p">;</span>
+</span></code></pre></div>
+<h2 id="define-rules">Define rules<a class="headerlink" href="#define-rules" title="Permanent link">#</a></h2>
+<p>To validate our Azure resources we need to define some rules.
+Rules are defined by using the <code>Rule</code> keyword in a file ending with the <code>.Rule.ps1</code> extension.</p>
+<p>So start we are going to define a <code>storageAccounts.UseHttps</code> rule, which will validate that Azure Storage resources have a <a href="https://docs.microsoft.com/azure/storage/common/storage-require-secure-transfer">Secure Transfer Required</a> enabled.</p>
+<p>In the example below:</p>
+<ul>
+<li>We use <code>storageAccounts.UseHttps</code> directly after the <code>Rule</code> keyword to name the rule definition.
+Each rule must be named uniquely.</li>
+<li>The <code># Synopsis:</code> comment is used to add additional metadata interpreted by PSRule.</li>
+<li>One or more conditions are defined within the curly braces <code>{ }</code>.</li>
+<li>The rule definition is saved within a file named <code>storageAccounts.Rule.ps1</code>.</li>
+</ul>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c"># Synopsis: Configure storage accounts to only accept encrypted traffic i.e. HTTPS/SMB</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">Rule</span> <span class="s1">&#39;storageAccounts.UseHttps&#39;</span> <span class="p">{</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="c"># Rule conditions go here</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="set-rule-condition">Set rule condition<a class="headerlink" href="#set-rule-condition" title="Permanent link">#</a></h3>
+<p>Conditions can be any valid PowerShell expression that results in a <code>$True</code> or <code>$False</code>, just like an <code>If</code> statement, but without specifically requiring the <code>If</code> keyword to be used.</p>
+<blockquote>
+<p>Several PSRule keywords such as <code>Exists</code> and <code>AllOf</code> can supplement PowerShell to quickly build out rules that are easy to read.</p>
+</blockquote>
+<p>In <code>resources.json</code> one of our example storage accounts has a property <code>Properties.supportsHttpsTrafficOnly</code> as shown below, which will be how our rule will pass <code>$True</code> or fail <code>$False</code> Azure resources that we throw at it.</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;storage&quot;</span><span class="p">,</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nt">&quot;ResourceName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;storage&quot;</span><span class="p">,</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nt">&quot;ResourceType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Microsoft.Storage/storageAccounts&quot;</span><span class="p">,</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nt">&quot;Kind&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Storage&quot;</span><span class="p">,</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="nt">&quot;ResourceGroupName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;test-rg&quot;</span><span class="p">,</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="nt">&quot;Location&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eastus2&quot;</span><span class="p">,</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="nt">&quot;Properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">        </span><span class="nt">&quot;supportsHttpsTrafficOnly&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>In the example below:</p>
+<ul>
+<li>We use the <code>$TargetObject</code> variable to get the object on the pipeline and access it's properties.</li>
+<li>The condition will return <code>$True</code> or <code>$False</code> back to the pipeline, where:<ul>
+<li><code>$True</code> - the object passed the validation check</li>
+<li><code>$False</code> - the object failed the validation check</li>
+</ul>
+</li>
+</ul>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c"># Synopsis: Configure storage accounts to only accept encrypted traffic i.e. HTTPS/SMB</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">Rule</span> <span class="s1">&#39;storageAccounts.UseHttps&#39;</span> <span class="p">{</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="c"># This property returns true or false, so nothing more needs to be done</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="nv">$TargetObject</span><span class="p">.</span><span class="n">Properties</span><span class="p">.</span><span class="n">supportsHttpsTrafficOnly</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="c"># Alternatively this could be written as:</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="c"># $TargetObject.Properties.supportsHttpsTrafficOnly -eq $True</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="add-rule-recommendation">Add rule recommendation<a class="headerlink" href="#add-rule-recommendation" title="Permanent link">#</a></h3>
+<p>Additionally to provide feedback to the person or process running the rules, we can use the <code>Recommend</code> keyword to set a message that appears in results.</p>
+<p>If a recommend message is not provided the synopsis will be used instead.</p>
+<p>In the example below:</p>
+<ul>
+<li>Directly after the <code>Recommend</code> keyword is a message to help understand why the rule failed or passed.</li>
+</ul>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c"># Synopsis: Configure storage accounts to only accept encrypted traffic i.e. HTTPS/SMB</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">Rule</span> <span class="s1">&#39;storageAccounts.UseHttps&#39;</span> <span class="p">{</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="n">Recommend</span> <span class="s1">&#39;Storage accounts should only allow secure traffic&#39;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="nv">$TargetObject</span><span class="p">.</span><span class="n">Properties</span><span class="p">.</span><span class="n">supportsHttpsTrafficOnly</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="filter-with-preconditions">Filter with preconditions<a class="headerlink" href="#filter-with-preconditions" title="Permanent link">#</a></h3>
+<p>So far our rule works for a Storage Account, but there are many type of resources that could be returned by calling <code>Get-AzResource</code>.
+Most of these resources won't have the <code>Properties.supportsHttpsTrafficOnly</code> property, and if it did, it may use different configuration options instead of just <code>true</code> and <code>false</code>.
+This is where preconditions help out.</p>
+<p>Preconditions can be specified by using the <code>-If</code> parameter when defining a rule.
+When the rule is executed, if the precondition is <code>$True</code> then the rule is processed, otherwise it is skipped.</p>
+<p>In the example below:</p>
+<ul>
+<li>A check against <code>$TargetObject.ResourceType</code> ensured that our rule is only processed for Storage Accounts.</li>
+</ul>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c"># Synopsis: Configure storage accounts to only accept encrypted traffic i.e. HTTPS/SMB</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">Rule</span> <span class="s1">&#39;storageAccounts.UseHttps&#39;</span> <span class="n">-If</span> <span class="p">{</span> <span class="nv">$TargetObject</span><span class="p">.</span><span class="n">ResourceType</span> <span class="o">-eq</span> <span class="s1">&#39;Microsoft.Storage/storageAccounts&#39;</span> <span class="p">}</span> <span class="p">{</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="n">Recommend</span> <span class="s1">&#39;Storage accounts should only allow secure traffic&#39;</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="nv">$TargetObject</span><span class="p">.</span><span class="n">Properties</span><span class="p">.</span><span class="n">supportsHttpsTrafficOnly</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Skipped rules have the outcome <code>None</code> and are not included in output by default.
+To include skipped rules use the <code>-Outcome All</code> parameter.</p>
+<h2 id="execute-rules">Execute rules<a class="headerlink" href="#execute-rules" title="Permanent link">#</a></h2>
+<p>With a rule defined, the next step is to execute it. To execute rules, pipe the target object to <code>Invoke-PSRule</code>.</p>
+<p>For example:</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c"># Read resources in from file</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nv">$resources</span> <span class="p">=</span> <span class="nb">Get-Content</span> <span class="n">-Path</span> <span class="p">.\</span><span class="n">resources</span><span class="p">.</span><span class="n">json</span> <span class="p">|</span> <span class="nb">ConvertFrom-Json</span><span class="p">;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c"># Process resources</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="nv">$resources</span> <span class="p">|</span> <span class="nb">Invoke-PSRule</span><span class="p">;</span>
+</span></code></pre></div>
+<p>PSRule natively supports reading from YAML and JSON files so this command-line can be simplified to:</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">Invoke-PSRule</span> <span class="n">-InputPath</span> <span class="p">.\</span><span class="n">resources</span><span class="p">.</span><span class="n">json</span><span class="p">;</span>
+</span></code></pre></div>
+<p>You will notice, we didn't specify the rule. By default PSRule will look for any <code>.Rule.ps1</code> files in the current working path.</p>
+<p><code>Invoke-PSRule</code> supports <code>-Path</code>, <code>-Name</code> and <code>-Tag</code> parameters that can be used to specify the path to look for rules in or filter rules if you want to run a subset of the rules.</p>
+<p>For this example we ran these commands:</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">Invoke-PSRule</span> <span class="n">-Path</span> <span class="n">docs</span><span class="p">/</span><span class="n">scenarios</span><span class="p">/</span><span class="n">azure-resources</span> <span class="n">-InputPath</span> <span class="n">docs</span><span class="p">/</span><span class="n">scenarios</span><span class="p">/</span><span class="n">azure-resources</span><span class="p">/</span><span class="n">resources</span><span class="p">.</span><span class="n">json</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Our output looked like this:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>   TargetName: storage
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>RuleName                            Outcome    Recommendation
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>--------                            -------    --------------
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>storageAccounts.UseHttps            Fail       Storage accounts should only allow secure traffic
+</span></code></pre></div>
+<p>In our case <code>storageAccounts.UseHttps</code> returns a <code>Fail</code> outcome because our storage account has <code>supportsHttpsTrafficOnly</code> = <code>false</code>, which is exactly what should happen.</p>
+<h2 id="define-helper-functions">Define helper functions<a class="headerlink" href="#define-helper-functions" title="Permanent link">#</a></h2>
+<p>Using helper functions is completely optional and not required in many cases.
+However, you may prefer to use helper functions when rule conditions or preconditions are complex and hard to understand.</p>
+<p>To use helper functions use a <code>function</code> block within a file with a <code>.Rule.ps1</code> extension.
+Any code within <code>.Rule.ps1</code> files called by <code>Invoke-PSRule</code> will be executed, however to make it available for use within a rule, a global scope modifier must be used.</p>
+<p>For functions this is done by prefixing the function name with <code>global:</code>.</p>
+<p>For example:</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">function</span> <span class="k">global:</span><span class="n">NameOfFunction</span> <span class="p">{</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    <span class="c"># Function body</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>In our example, we are going to define a <code>ResourceType</code> function in a file named <code>common.Rule.ps1</code>.
+This function will be used by preconditions to check the type of Azure resource.</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c"># A custom function to filter by resource type</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">function</span> <span class="k">global:</span><span class="n">ResourceType</span> <span class="p">{</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="k">param</span> <span class="p">(</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>        <span class="no">[String]</span><span class="nv">$ResourceType</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>    <span class="p">)</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>    <span class="k">process</span> <span class="p">{</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>        <span class="k">return</span> <span class="nv">$TargetObject</span><span class="p">.</span><span class="n">ResourceType</span> <span class="o">-eq</span> <span class="nv">$ResourceType</span><span class="p">;</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>    <span class="p">}</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Updating our existing <code>storageAccounts.UseHttps</code> rule, our rule definition becomes:</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c"># Synopsis: Configure storage accounts to only accept encrypted traffic i.e. HTTPS/SMB</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">Rule</span> <span class="s1">&#39;storageAccounts.UseHttps&#39;</span> <span class="n">-If</span> <span class="p">{</span> <span class="n">ResourceType</span> <span class="s1">&#39;Microsoft.Storage/storageAccounts&#39;</span> <span class="p">}</span> <span class="p">{</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    <span class="n">Recommend</span> <span class="s1">&#39;Storage accounts should only allow secure traffic&#39;</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="nv">$TargetObject</span><span class="p">.</span><span class="n">Properties</span><span class="p">.</span><span class="n">supportsHttpsTrafficOnly</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="more-information">More information<a class="headerlink" href="#more-information" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="storageAccounts.Rule.ps1">storageAccounts.Rule.ps1</a> - Example rules for validating Azure Storage.</li>
+<li><a href="appService.Rule.ps1">appService.Rule.ps1</a> - Example rules for validating Azure App Service.</li>
+<li><a href="resources.json">resources.json</a> - Offline export of Azure resources.</li>
+<li><a href="common.Rule.ps1">common.Rule.ps1</a> - ResourceType helper function.</li>
 </ul>
 
 
@@ -2900,7 +3132,7 @@ Passed, failed and error results are shown by default.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 3, 2022 03:36:08 UTC">January 3, 2022</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 6, 2022 23:42:04 UTC">March 6, 2022</span>
   </span>
 
     
@@ -2910,7 +3142,7 @@ Passed, failed and error results are shown by default.</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 22, 2020 11:44:42 UTC">July 22, 2020</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="December 3, 2018 06:40:44 UTC">December 3, 2018</span>
   </span>
 
     
@@ -2936,6 +3168,11 @@ Passed, failed and error results are shown by default.</p>
         <a href="https://github.com/web-flow" class="md-author" title="@web-flow">
           
           <img src="https://avatars.githubusercontent.com/u/19864447?v=4&size=72" alt="web-flow">
+        </a>
+      
+        <a href="https://github.com/dylan-apera" class="md-author" title="@dylan-apera">
+          
+          <img src="https://avatars.githubusercontent.com/u/74391707?v=4&size=72" alt="dylan-apera">
         </a>
       
       
@@ -3023,6 +3260,44 @@ Passed, failed and error results are shown by default.</p>
         <footer class="md-footer">
   
     
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../authoring/writing-rule-help.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Writing rule help">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Writing rule help
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../azure-tags/azure-tags.html" class="md-footer__link md-footer__link--next" aria-label="Next: Azure resource tagging example">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Azure resource tagging example
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -3063,10 +3338,10 @@ Passed, failed and error results are shown by default.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "navigation.footer", "content.code.annotate", "content.tabs.link", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "stable", "provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "navigation.footer", "content.code.annotate", "content.tabs.link", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "stable", "provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
       
     
   </body>

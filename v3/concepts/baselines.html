@@ -6,15 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Validate infrastructure as code (IaC) and objects using PowerShell rules.">
+        <meta name="description" content="A baseline is a set of rules and configuration options. You can define a named baseline to run a set of rules for a specific use case.">
       
       
         <meta name="author" content="Microsoft">
       
       
-        <link rel="canonical" href="https://microsoft.github.io/PSRule/v3/scenarios/index.html">
+        <link rel="canonical" href="https://microsoft.github.io/PSRule/v3/concepts/baselines.html">
       
       
+        <link rel="prev" href="../scenarios/containers/container-execution.html">
+      
+      
+        <link rel="next" href="capabilities.html">
       
       
       <link rel="icon" href="../assets/ms_icon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>Getting started with PSRule - PSRule</title>
+        <title>Baselines - PSRule</title>
       
     
     
@@ -67,6 +71,8 @@
   <!-- Determine description -->
   
   
+    
+  
 
   <!-- The image needs to have an absolute URL -->
   
@@ -74,20 +80,20 @@
   <!-- Open graph meta tags -->
   <meta property="og:site_name" content="PSRule" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="PSRule - Getting started with PSRule" />
-  <meta property="og:description" content="Validate infrastructure as code (IaC) and objects using PowerShell rules." />
-  <meta property="og:url" content="https://microsoft.github.io/PSRule/v3/scenarios/index.html" />
+  <meta property="og:title" content="PSRule - Baselines" />
+  <meta property="og:description" content="A baseline is a set of rules and configuration options. You can define a named baseline to run a set of rules for a specific use case." />
+  <meta property="og:url" content="https://microsoft.github.io/PSRule/v3/concepts/baselines.html" />
   <meta property="og:image" content="https://repository-images.githubusercontent.com/125832556/d6685d9f-ba70-44a1-b11f-6534831143d1" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1280" />
   <meta property="og:image:height" content="640" />
-  <meta property="og:image:alt" content="Validate infrastructure as code (IaC) and objects using PowerShell rules." />
+  <meta property="og:image:alt" content="A baseline is a set of rules and configuration options. You can define a named baseline to run a set of rules for a specific use case." />
 
   <!-- Twitter meta tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@github" />
-  <meta name="twitter:title" content="PSRule - Getting started with PSRule" />
-  <meta name="twitter:description" content="Validate infrastructure as code (IaC) and objects using PowerShell rules." />
+  <meta name="twitter:title" content="PSRule - Baselines" />
+  <meta name="twitter:description" content="A baseline is a set of rules and configuration options. You can define a named baseline to run a set of rules for a specific use case." />
   <meta name="twitter:image" content="https://repository-images.githubusercontent.com/125832556/d6685d9f-ba70-44a1-b11f-6534831143d1" />
 
 
@@ -108,7 +114,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started-with-psrule" class="md-skip">
+        <a href="#baselines" class="md-skip">
           Skip to content
         </a>
       
@@ -158,7 +164,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting started with PSRule
+              Baselines
             
           </span>
         </div>
@@ -260,6 +266,8 @@
   
   
   
+    
+  
   
     
     
@@ -267,10 +275,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../about.html" class="md-tabs__link">
           
   
@@ -453,8 +463,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -486,17 +498,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -509,7 +524,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Getting started
@@ -1114,7 +1129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="azure-resources/azure-resources.html" class="md-nav__link">
+      <a href="../scenarios/azure-resources/azure-resources.html" class="md-nav__link">
         
   
   
@@ -1137,7 +1152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="azure-tags/azure-tags.html" class="md-nav__link">
+      <a href="../scenarios/azure-tags/azure-tags.html" class="md-nav__link">
         
   
   
@@ -1160,7 +1175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="kubernetes-resources/kubernetes-resources.html" class="md-nav__link">
+      <a href="../scenarios/kubernetes-resources/kubernetes-resources.html" class="md-nav__link">
         
   
   
@@ -1183,7 +1198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="containers/container-execution.html" class="md-nav__link">
+      <a href="../scenarios/containers/container-execution.html" class="md-nav__link">
         
   
   
@@ -1211,8 +1226,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1237,11 +1254,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" checked>
         
           
           <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
@@ -1257,7 +1274,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_7">
             <span class="md-nav__icon md-icon"></span>
             Concepts
@@ -1268,10 +1285,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../concepts/baselines.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Baselines
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="baselines.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1282,6 +1321,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-baselines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using baselines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using baselines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#baseline-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baseline groups
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defining-baselines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining baselines
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1294,7 +1386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/capabilities.html" class="md-nav__link">
+      <a href="capabilities.html" class="md-nav__link">
         
   
   
@@ -1317,7 +1409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/formats.html" class="md-nav__link">
+      <a href="formats.html" class="md-nav__link">
         
   
   
@@ -1363,7 +1455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/grouping-rules.html" class="md-nav__link">
+      <a href="grouping-rules.html" class="md-nav__link">
         
   
   
@@ -1409,7 +1501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/lockfile.html" class="md-nav__link">
+      <a href="lockfile.html" class="md-nav__link">
         
   
   
@@ -1485,7 +1577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="validation-pipeline/validation-pipeline.html" class="md-nav__link">
+      <a href="../scenarios/validation-pipeline/validation-pipeline.html" class="md-nav__link">
         
   
   
@@ -2166,7 +2258,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../concepts/cli/index.html" class="md-nav__link ">
+            <a href="cli/index.html" class="md-nav__link ">
               
   
   
@@ -2201,7 +2293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/cli/run.html" class="md-nav__link">
+      <a href="cli/run.html" class="md-nav__link">
         
   
   
@@ -2224,7 +2316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/cli/module.html" class="md-nav__link">
+      <a href="cli/module.html" class="md-nav__link">
         
   
   
@@ -2247,7 +2339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/cli/restore.html" class="md-nav__link">
+      <a href="cli/restore.html" class="md-nav__link">
         
   
   
@@ -2278,7 +2370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Assert.html" class="md-nav__link">
+      <a href="PSRule/en-US/about_PSRule_Assert.html" class="md-nav__link">
         
   
   
@@ -2301,7 +2393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Baseline.html" class="md-nav__link">
+      <a href="PSRule/en-US/about_PSRule_Baseline.html" class="md-nav__link">
         
   
   
@@ -2324,7 +2416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Badges.html" class="md-nav__link">
+      <a href="PSRule/en-US/about_PSRule_Badges.html" class="md-nav__link">
         
   
   
@@ -2347,7 +2439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Conventions.html" class="md-nav__link">
+      <a href="PSRule/en-US/about_PSRule_Conventions.html" class="md-nav__link">
         
   
   
@@ -2370,7 +2462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Docs.html" class="md-nav__link">
+      <a href="PSRule/en-US/about_PSRule_Docs.html" class="md-nav__link">
         
   
   
@@ -2393,7 +2485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Expressions.html" class="md-nav__link">
+      <a href="PSRule/en-US/about_PSRule_Expressions.html" class="md-nav__link">
         
   
   
@@ -2439,7 +2531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Options.html" class="md-nav__link">
+      <a href="PSRule/en-US/about_PSRule_Options.html" class="md-nav__link">
         
   
   
@@ -2462,7 +2554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Rules.html" class="md-nav__link">
+      <a href="PSRule/en-US/about_PSRule_Rules.html" class="md-nav__link">
         
   
   
@@ -2485,7 +2577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/security.html" class="md-nav__link">
+      <a href="security.html" class="md-nav__link">
         
   
   
@@ -2508,7 +2600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Selectors.html" class="md-nav__link">
+      <a href="PSRule/en-US/about_PSRule_Selectors.html" class="md-nav__link">
         
   
   
@@ -2531,7 +2623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_SuppressionGroups.html" class="md-nav__link">
+      <a href="PSRule/en-US/about_PSRule_SuppressionGroups.html" class="md-nav__link">
         
   
   
@@ -2554,7 +2646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/PSRule/en-US/about_PSRule_Variables.html" class="md-nav__link">
+      <a href="PSRule/en-US/about_PSRule_Variables.html" class="md-nav__link">
         
   
   
@@ -2701,36 +2793,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#define-a-rule" class="md-nav__link">
+  <a href="#using-baselines" class="md-nav__link">
     <span class="md-ellipsis">
-      Define a rule
+      Using baselines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using baselines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#baseline-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baseline groups
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#execute-a-rule" class="md-nav__link">
-    <span class="md-ellipsis">
-      Execute a rule
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#additional-options" class="md-nav__link">
+  <a href="#defining-baselines" class="md-nav__link">
     <span class="md-ellipsis">
-      Additional options
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scenarios" class="md-nav__link">
-    <span class="md-ellipsis">
-      Scenarios
+      Defining baselines
     </span>
   </a>
   
@@ -2753,7 +2842,7 @@
 
 
   
-    <a href="https://github.com/microsoft/PSRule/blob/main/docs/scenarios/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/microsoft/PSRule/blob/main/docs/concepts/baselines.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -2762,122 +2851,105 @@
     
       
     
-    <a href="https://github.com/microsoft/PSRule/raw/main/docs/scenarios/index.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/microsoft/PSRule/raw/main/docs/concepts/baselines.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-<h1 id="getting-started-with-psrule">Getting started with PSRule<a class="headerlink" href="#getting-started-with-psrule" title="Permanent link">#</a></h1>
-<h3 id="define-a-rule">Define a rule<a class="headerlink" href="#define-a-rule" title="Permanent link">#</a></h3>
-<p>To define a rule, use a <code>Rule</code> block saved to a file with the <code>.Rule.ps1</code> extension.</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">Rule</span> <span class="s1">&#39;NameOfRule&#39;</span> <span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="c"># Rule conditions</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>Within the body of the rule provide one or more conditions.
-A condition is valid PowerShell that results in <code>$True</code> or <code>$False</code>.</p>
-<p>For example:</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">Rule</span> <span class="s1">&#39;isFruit&#39;</span> <span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="c"># Condition to determine if the object is fruit</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="nv">$TargetObject</span><span class="p">.</span><span class="n">Name</span> <span class="n">-in</span> <span class="s1">&#39;Apple&#39;</span><span class="p">,</span> <span class="s1">&#39;Orange&#39;</span><span class="p">,</span> <span class="s1">&#39;Pear&#39;</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>An optional result message can be added to by using the <code>Recommend</code> keyword.</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">Rule</span> <span class="s1">&#39;isFruit&#39;</span> <span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="c"># An recommendation to display in output</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="n">Recommend</span> <span class="s1">&#39;Fruit is only Apple, Orange and Pear&#39;</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="c"># Condition to determine if the object is fruit</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="nv">$TargetObject</span><span class="p">.</span><span class="n">Name</span> <span class="n">-in</span> <span class="s1">&#39;Apple&#39;</span><span class="p">,</span> <span class="s1">&#39;Orange&#39;</span><span class="p">,</span> <span class="s1">&#39;Pear&#39;</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>The rule is saved to a file named <a href="fruit/isFruit.Rule.ps1"><code>isFruit.Rule.ps1</code></a> file.
-One or more rules can be defined within a single file.</p>
-<h3 id="execute-a-rule">Execute a rule<a class="headerlink" href="#execute-a-rule" title="Permanent link">#</a></h3>
-<p>To execute the rule use <code>Invoke-PSRule</code>.</p>
-<p>For example:</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c"># Define objects to validate</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nv">$items</span> <span class="p">=</span> <span class="p">@();</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nv">$items</span> <span class="p">+=</span> <span class="no">[PSCustomObject]</span><span class="p">@{</span> <span class="n">Name</span> <span class="p">=</span> <span class="s1">&#39;Fridge&#39;</span> <span class="p">};</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nv">$items</span> <span class="p">+=</span> <span class="no">[PSCustomObject]</span><span class="p">@{</span> <span class="n">Name</span> <span class="p">=</span> <span class="s1">&#39;Apple&#39;</span> <span class="p">};</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="c"># Validate each item using rules saved in current working path</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nv">$items</span> <span class="p">|</span> <span class="nb">Invoke-PSRule</span><span class="p">;</span>
-</span></code></pre></div>
-<p>The output of this example is:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>   TargetName: Fridge
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>RuleName                            Outcome    Recommendation
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>--------                            -------    --------------
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>isFruit                             Fail       Fruit is only Apple, Orange and Pear
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>   TargetName: Apple
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>RuleName                            Outcome    Recommendation
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>--------                            -------    --------------
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>isFruit                             Pass       Fruit is only Apple, Orange and Pear
-</span></code></pre></div>
-<h3 id="additional-options">Additional options<a class="headerlink" href="#additional-options" title="Permanent link">#</a></h3>
-<p>To filter results to only non-fruit results, use <code>Invoke-PSRule -Outcome Fail</code>.
-Passed, failed and error results are shown by default.</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c"># Only show non-fruit results</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nv">$items</span> <span class="p">|</span> <span class="nb">Invoke-PSRule</span> <span class="n">-Outcome</span> <span class="n">Fail</span><span class="p">;</span>
-</span></code></pre></div>
-<p>For a summary of results for each rule use <code>Invoke-PSRule -As Summary</code>.</p>
-<p>For example:</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c"># Show rule summary</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nv">$items</span> <span class="p">|</span> <span class="nb">Invoke-PSRule</span> <span class="o">-As</span> <span class="n">Summary</span><span class="p">;</span>
-</span></code></pre></div>
-<p>The output of this example is:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>RuleName                            Pass  Fail  Outcome
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>--------                            ----  ----  -------
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>isFruit                             1     1     Fail
-</span></code></pre></div>
-<p>An optional failure reason can be added to the rule block by using the <code>Reason</code> keyword.</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">Rule</span> <span class="s1">&#39;isFruit&#39;</span> <span class="p">{</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="c"># An recommendation to display in output</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="n">Recommend</span> <span class="s1">&#39;Fruit is only Apple, Orange and Pear&#39;</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="c"># An failure reason to display for non-fruit</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    <span class="n">Reason</span> <span class="s2">&quot;</span><span class="p">$(</span><span class="nv">$PSRule</span><span class="p">.</span><span class="n">TargetName</span><span class="p">)</span><span class="s2"> is not fruit.&quot;</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
-</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>    <span class="c"># Condition to determine if the object is fruit</span>
-</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>    <span class="nv">$TargetObject</span><span class="p">.</span><span class="n">Name</span> <span class="n">-in</span> <span class="s1">&#39;Apple&#39;</span><span class="p">,</span> <span class="s1">&#39;Orange&#39;</span><span class="p">,</span> <span class="s1">&#39;Pear&#39;</span>
-</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>To include the reason with output use <code>Invoke-PSRule -OutputFormat Wide</code>.</p>
-<p>For example:</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c"># Show failure reason for failing results</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nv">$items</span> <span class="p">|</span> <span class="nb">Invoke-PSRule</span> <span class="n">-OutputFormat</span> <span class="n">Wide</span><span class="p">;</span>
-</span></code></pre></div>
-<p>The output of this example is:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>   TargetName: Fridge
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>RuleName                            Outcome    Reason                              Recommendation
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>--------                            -------    ------                              --------------
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>isFruit                             Fail       Fridge is not fruit.                Fruit is only Apple, Orange and Pear
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>
-</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>   TargetName: Apple
-</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
-</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>RuleName                            Outcome    Reason                              Recommendation
-</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>--------                            -------    ------                              --------------
-</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>isFruit                             Pass                                           Fruit is only Apple, Orange and Pear
-</span></code></pre></div>
-<p>The final rule is saved to <a href="fruit/isFruit.Rule.ps1"><code>isFruit.Rule.ps1</code></a>.</p>
-<h3 id="scenarios">Scenarios<a class="headerlink" href="#scenarios" title="Permanent link">#</a></h3>
-<p>For walk through examples of PSRule usage see:</p>
+<h1 id="baselines">Baselines<a class="headerlink" href="#baselines" title="Permanent link">#</a></h1>
+<p>A <em>baseline</em> is a set of rules and configuration options.
+You can define a named baseline to run a set of rules for a specific use case.</p>
+<p>Baselines cover two (2) main scenarios:</p>
 <ul>
-<li><a href="azure-resources/azure-resources.html">Validate Azure resource configuration</a></li>
-<li><a href="azure-tags/azure-tags.html">Validate Azure resources tags</a></li>
-<li><a href="kubernetes-resources/kubernetes-resources.html">Validate Kubernetes resources</a></li>
-<li><a href="validation-pipeline/validation-pipeline.html">Using within continuous integration</a></li>
-<li><a href="../authoring/packaging-rules.html">Packaging rules in a module</a></li>
-<li><a href="../authoring/writing-rule-help.html">Writing rule help</a></li>
+<li><strong>A collection of rules</strong> &mdash; Baselines allow you to define a set of rules that will run each time the baseline is specified.</li>
+<li><strong>Paired with configuration</strong> &mdash; Baselines allow you to pair configuration so rules run consistently.</li>
 </ul>
+<h2 id="using-baselines">Using baselines<a class="headerlink" href="#using-baselines" title="Permanent link">#</a></h2>
+<p>To use a baseline, specify it by name when you run PSRule.
+For example:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">GitHub Actions</label><label for="__tabbed_1_2">Azure Pipelines</label><label for="__tabbed_1_3">Generic with PowerShell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run PSRule</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">microsoft/ps-rule@v2.9.0</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">with</span><span class="p">:</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">modules</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;PSRule.Rules.Azure&#39;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">baseline</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Azure.GA_2024_09&#39;</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ps-rule-assert@2</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run PSRule</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nt">modules</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;PSRule.Rules.Azure&#39;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nt">baseline</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Azure.GA_2024_09&#39;</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Assert-PSRule</span> <span class="n">-InputPath</span> <span class="s1">&#39;.&#39;</span> <span class="n">-Baseline</span> <span class="s1">&#39;Azure.GA_2024_09&#39;</span> <span class="n">-Module</span> <span class="n">PSRule</span><span class="p">.</span><span class="n">Rules</span><span class="p">.</span><span class="n">Azure</span><span class="p">;</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="baseline-groups">Baseline groups<a class="headerlink" href="#baseline-groups" title="Permanent link">#</a></h3>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.75 1a.75.75 0 0 1 .75.75V4h6.532c.42 0 .826.15 1.143.425l3.187 2.75a1.75 1.75 0 0 1 0 2.65l-3.187 2.75a1.75 1.75 0 0 1-1.143.425H12.5v9.25a.75.75 0 0 1-1.5 0V13H3.75A1.75 1.75 0 0 1 2 11.25v-5.5C2 4.783 2.784 4 3.75 4H11V1.75a.75.75 0 0 1 .75-.75m7.282 4.5H3.75a.25.25 0 0 0-.25.25v5.5c0 .138.112.25.25.25h15.282c.06 0 .118-.021.163-.06l3.188-2.75a.248.248 0 0 0 0-.38l-3.188-2.75a.25.25 0 0 0-.163-.06"/></svg></span> v2.9.0</p>
+<p>In addition to specifying a baseline by name you can use a baseline group.
+A baseline group provides an alternative name to an existing baseline.
+Baseline groups allowing you to decouple pipeline configuration from the baseline name when it changes often.</p>
+<p>A baseline groups are set by configuring the <a href="PSRule/en-US/about_PSRule_Options.html#baselinegroup">Baseline.Group</a> option.</p>
+<div class="admonition experimental">
+<p class="admonition-title">Experimental</p>
+<p><em>Baseline groups</em> are a work in progress and subject to change.
+Currently, <em>baseline groups</em> allow only a single baseline to be referenced.
+<a href="https://github.com/microsoft/PSRule/discussions">Join or start a discussion</a> to let us know how we can improve this feature going forward.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can use baseline groups to reference a baseline.
+If a new baseline is made available in the future, update your baseline group in one place to start using the new baseline.</p>
+</div>
+<p>In the following example, two baseline groups <code>latest</code> and <code>preview</code> are defined:</p>
+<div class="language-yaml highlight"><span class="filename">ps-rule.yaml</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">baseline</span><span class="p">:</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">group</span><span class="p">:</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nt">latest</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PSRule.Rules.Azure\Azure.GA_2024_09</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nt">preview</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PSRule.Rules.Azure\Azure.Preview_2024_09</span>
+</span></code></pre></div>
+<ul>
+<li>The <code>latest</code> baseline group is set to <code>Azure.GA_2024_09</code> within the <code>PSRule.Rules.Azure</code> module.</li>
+<li>The <code>preview</code> baseline group is set to <code>Azure.Preview_2024_09</code> within the <code>PSRule.Rules.Azure</code> module.</li>
+</ul>
+<p>To use the baseline group, prefix the group name with <code>@</code> when running PSRule.
+For example:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">GitHub Actions</label><label for="__tabbed_2_2">Azure Pipelines</label><label for="__tabbed_2_3">Generic with PowerShell</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run PSRule</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">microsoft/ps-rule@v2.9.0</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="nt">with</span><span class="p">:</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nt">modules</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;PSRule.Rules.Azure&#39;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="nt">baseline</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;@latest&#39;</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ps-rule-assert@2</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run PSRule</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="nt">inputs</span><span class="p">:</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="nt">modules</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;PSRule.Rules.Azure&#39;</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="nt">baseline</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;@latest&#39;</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">Assert-PSRule</span> <span class="n">-InputPath</span> <span class="s1">&#39;.&#39;</span> <span class="n">-Baseline</span> <span class="s1">&#39;@latest&#39;</span> <span class="n">-Module</span> <span class="n">PSRule</span><span class="p">.</span><span class="n">Rules</span><span class="p">.</span><span class="n">Azure</span> <span class="n">-Format</span> <span class="n">File</span><span class="p">;</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="defining-baselines">Defining baselines<a class="headerlink" href="#defining-baselines" title="Permanent link">#</a></h2>
+<p>A baseline is defined as a resource within YAML or JSON.
+Custom baselines can be defined side-by-side with rules you create or included separately.</p>
+<p>Continue reading <a href="PSRule/en-US/about_PSRule_Baseline.html">baseline</a> reference.</p>
 
 
 
@@ -2900,7 +2972,7 @@ Passed, failed and error results are shown by default.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 3, 2022 03:36:08 UTC">January 3, 2022</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 7, 2025 08:25:27 UTC">January 7, 2025</span>
   </span>
 
     
@@ -2910,7 +2982,7 @@ Passed, failed and error results are shown by default.</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 22, 2020 11:44:42 UTC">July 22, 2020</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 3, 2023 19:27:42 UTC">June 3, 2023</span>
   </span>
 
     
@@ -3022,6 +3094,44 @@ Passed, failed and error results are shown by default.</p>
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../scenarios/containers/container-execution.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Using PSRule from a Container">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Using PSRule from a Container
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="capabilities.html" class="md-footer__link md-footer__link--next" aria-label="Next: Capabilities">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Capabilities
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
