@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.7.7">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -4857,16 +4857,16 @@
 <p>The <strong>New-PSRuleOption</strong> cmdlet creates an options object that can be passed to PSRule cmdlets to configure execution.</p>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">#</a></h2>
 <h3 id="example-1">Example 1<a class="headerlink" href="#example-1" title="Permanent link">#</a></h3>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">$option</span> <span class="p">=</span> <span class="nb">New-PSRuleOption</span> <span class="n">-Option</span> <span class="p">@{</span> <span class="s1">&#39;execution.mode&#39;</span> <span class="p">=</span> <span class="s1">&#39;ConstrainedLanguage&#39;</span> <span class="p">}</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">@{</span> <span class="n">Name</span> <span class="p">=</span> <span class="s1">&#39;Item 1&#39;</span> <span class="p">}</span> <span class="p">|</span> <span class="nb">Invoke-PSRule</span> <span class="n">-Option</span> <span class="nv">$option</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">$option</span> <span class="p">=</span> <span class="nb">New-PSRuleOption</span> <span class="n">-Option</span> <span class="p">@{</span> <span class="s1">'execution.mode'</span> <span class="p">=</span> <span class="s1">'ConstrainedLanguage'</span> <span class="p">}</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">@{</span> <span class="n">Name</span> <span class="p">=</span> <span class="s1">'Item 1'</span> <span class="p">}</span> <span class="p">|</span> <span class="nb">Invoke-PSRule</span> <span class="n">-Option</span> <span class="nv">$option</span>
 </span></code></pre></div>
 <p>Create an options object and run rules in constrained mode.</p>
 <h3 id="example-2">Example 2<a class="headerlink" href="#example-2" title="Permanent link">#</a></h3>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">$option</span> <span class="p">=</span> <span class="nb">New-PSRuleOption</span> <span class="n">-SuppressTargetName</span> <span class="p">@{</span> <span class="s1">&#39;storageAccounts.UseHttps&#39;</span> <span class="p">=</span> <span class="s1">&#39;TestObject1&#39;</span><span class="p">,</span> <span class="s1">&#39;TestObject3&#39;</span> <span class="p">};</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">$option</span> <span class="p">=</span> <span class="nb">New-PSRuleOption</span> <span class="n">-SuppressTargetName</span> <span class="p">@{</span> <span class="s1">'storageAccounts.UseHttps'</span> <span class="p">=</span> <span class="s1">'TestObject1'</span><span class="p">,</span> <span class="s1">'TestObject3'</span> <span class="p">};</span>
 </span></code></pre></div>
 <p>Create an options object that suppresses <code>TestObject1</code> and <code>TestObject3</code> for a rule named <code>storageAccounts.UseHttps</code>.</p>
 <h3 id="example-3">Example 3<a class="headerlink" href="#example-3" title="Permanent link">#</a></h3>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nv">$option</span> <span class="p">=</span> <span class="nb">New-PSRuleOption</span> <span class="n">-Configuration</span> <span class="p">@{</span> <span class="s1">&#39;appServiceMinInstanceCount&#39;</span> <span class="p">=</span> <span class="n">2</span> <span class="p">};</span>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nv">$option</span> <span class="p">=</span> <span class="nb">New-PSRuleOption</span> <span class="n">-Configuration</span> <span class="p">@{</span> <span class="s1">'appServiceMinInstanceCount'</span> <span class="p">=</span> <span class="n">2</span> <span class="p">};</span>
 </span></code></pre></div>
 <p>Create an options object that sets the <code>appServiceMinInstanceCount</code> baseline configuration option to <code>2</code>.</p>
 <h2 id="parameters">PARAMETERS<a class="headerlink" href="#parameters" title="Permanent link">#</a></h2>
@@ -5806,7 +5806,7 @@ The <code>Execution.RestrictScriptSource</code> option configures where PowerShe
       <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "navigation.footer", "content.code.annotate", "content.tabs.link", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "stable", "provider": "mike"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
